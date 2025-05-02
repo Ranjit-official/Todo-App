@@ -5,12 +5,13 @@ class CustomTiles extends StatelessWidget {
   final IconData? trailing;
   final String title;
   final Color? color;
+  final VoidCallback onPressed;
   const CustomTiles(
       {super.key,
       this.leading,
       this.trailing = Icons.arrow_forward_ios,
       required this.title,
-      this.color});
+      this.color, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +30,7 @@ class CustomTiles extends StatelessWidget {
         title,
         style: TextStyle(color: color ?? Colors.white),
       ),
+      onTap: onPressed,
     );
   }
 }

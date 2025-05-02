@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:to_dos/features/focus/ui/screens/focus_screen.dart';
 import 'package:to_dos/features/home/ui/screens/home_page_screen.dart';
 import 'package:to_dos/features/profile/ui/screen/profile_screen.dart';
 
@@ -33,7 +34,7 @@ class _DashBoardWidgetState extends State<DashBoardWidget> {
     HomePageScreen(),
     HomePageScreen(),
     HomePageScreen(),
-    HomePageScreen(),
+    FocusScreen(),
     ProfilePage(),
   ];
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:to_dos/common/assets.dart';
+import 'package:to_dos/common/routes.dart';
 import 'package:to_dos/common/tiles/custom_tiles.dart';
 
 class ProfileWidget extends StatefulWidget {
@@ -74,6 +75,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                 CustomTiles(
                   title: "App Settings",
                   leading: Icons.settings,
+                  onPressed: () {},
                 ),
                 SizedBox(
                   height: 16,
@@ -82,14 +84,17 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                 CustomTiles(
                   title: "Change Account Name",
                   leading: Icons.person_2_outlined,
+                  onPressed: () {},
                 ),
                 CustomTiles(
                   title: "Change Account password",
                   leading: Icons.key,
+                  onPressed: () {},
                 ),
                 CustomTiles(
                   title: "Change Account Image",
                   leading: Icons.camera_alt_outlined,
+                  onPressed: () {},
                 ),
                 SizedBox(
                   height: 16,
@@ -98,24 +103,32 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                 CustomTiles(
                   title: "About Us",
                   leading: Icons.more_horiz_rounded,
+                  onPressed: () {},
                 ),
                 CustomTiles(
                   title: "FAQ",
                   leading: Icons.format_quote,
+                  onPressed: () {},
                 ),
                 CustomTiles(
                   title: "Help & Feedback",
                   leading: Icons.energy_savings_leaf_outlined,
+                  onPressed: () {},
                 ),
                 CustomTiles(
                   title: "Support US",
                   leading: Icons.support_agent_rounded,
+                  onPressed: () {},
                 ),
                 CustomTiles(
                   title: "Log Out",
                   leading: Icons.logout_rounded,
                   trailing: Icons.wifi_1_bar,
                   color: Colors.red,
+                  onPressed: () {
+                    Navigator.of(context, rootNavigator: true)
+                        .pushReplacementNamed(Routes.login);
+                  },
                 ),
               ],
             ),

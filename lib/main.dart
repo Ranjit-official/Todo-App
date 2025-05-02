@@ -32,7 +32,7 @@ class MyApplication extends StatelessWidget {
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData.dark(),
-          home: HomePageWidget(),
+          home: DashBoardScreen(),
           onGenerateRoute: (settings) {
             if (settings.name == Routes.dashboard) {
               return PageTransition(

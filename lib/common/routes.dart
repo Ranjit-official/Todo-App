@@ -3,7 +3,7 @@ class Routes {
   static const register = "/register";
   static const dashboard = "/dashboard";
   static const focus = "/focus";
-  static const home = "/";
+  static const home = "/home";
   static const onboarding = "/onboarding";
   static const profile = "/profile";
   static const setting = "/setting";

@@ -29,16 +29,19 @@ class _SettingWidgetState extends State<SettingWidget> {
                 leading: Icons.format_paint,
                 trailing: Icons.arrow_forward_ios,
                 title: "Change app color",
+                onPressed: () {},
               ),
               CustomTiles(
                 leading: Icons.format_paint,
                 trailing: Icons.arrow_forward_ios,
                 title: "Change app typography",
+                onPressed: () {},
               ),
               CustomTiles(
                 leading: Icons.text_format_sharp,
                 trailing: Icons.arrow_forward_ios,
                 title: "Change app language",
+                onPressed: () {},
               ),
               SizedBox(
                 height: 16,
@@ -51,6 +54,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                 leading: Icons.import_contacts_rounded,
                 trailing: Icons.arrow_forward_ios,
                 title: "Import from Google calendar",
+                onPressed: () {},
               ),
             ]),
           )),
