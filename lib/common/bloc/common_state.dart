@@ -1,3 +1,6 @@
+import 'package:dio/dio.dart';
+import 'package:to_dos/features/home/models/todo.dart';
+
 abstract class CommonState {}
 
 class CommonInitialState extends CommonState{
@@ -10,7 +13,7 @@ final bool isLoading;
 }
 
 class CommonSuccessState extends CommonState{
-  final Type data;
+  final List<Todo> data;
 
   CommonSuccessState({required this.data});
 }
